@@ -4,12 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.9",
+    "@iconscout/react-unicons": "^1.1.6",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^4.0.0",
+    "google-spreadsheet": "^3.1.15",
+    "next": "^10.0.9",
+    "next-i18next": "^8.2.0",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-facebook-pixel": "^1.0.4",
+    "react-hook-form": "^6.15.5",
+    "react-intersection-observer": "^8.31.0",
+    "react-lazy-load": "^3.1.13",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-lazyload": "^3.2.0",
+    "sass": "^1.32.8"
   }
 }
