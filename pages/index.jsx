@@ -42,17 +42,14 @@ export default function Home() {
               {t('h1-soluciones')}
             </motion.h1>
             <p>
-              En ISAL queremos que encuentres la solución ideal para tu negocio.
-              Somos un equipo multidisciplinario con conocimientos en Ingeniería
-              de Software, Marketing Digital, Branding, Product Management,
-              Metodologías ágiles y Transformación Digital.
+            {t('p-en-isal')}
             </p>
             <div className="pt-1 group-btns">
               <a href="#asesoria-gratuita" className="btn gm-sec">
-                Asesoría gratuita
+              {t('btn-asesoria')}
               </a>
               <a href="#Contacto" className="btn gm-sec">
-                Contáctenos
+              {t('btn-contactenos')}
               </a>
             </div>
           </motion.div>
@@ -76,7 +73,7 @@ export default function Home() {
           <div className="chevron" />
           <div className="chevron" />
           <div className="chevron" />
-          <span className="text">Sigue bajando</span>
+          <span className="text">{t("p-sigue-bajando")}</span>
         </div>
       </div>
 

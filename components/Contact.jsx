@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import { useTranslation } from 'next-i18next'
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -9,6 +10,7 @@ const Contact = () => {
   const [disabled, setDisabled] = useState(true);
   const [emailSent, setEmailSent] = useState(false);
   const API_PATH = "https://mjpg-portfolio-api.herokuapp.com/api/email/";
+  const { t } = useTranslation('common')
 
   const sendMail = (event) => {
     event.preventDefault();
@@ -37,11 +39,11 @@ const Contact = () => {
 
   return (
     <div id="Contacto" className="home-5">
-      <h2 className="gradient-text">Pongamonos en contacto</h2>
+      <h2 className="gradient-text">{t('h2-contacto')}</h2>
       <form onSubmit={(event) => sendMail(event)}>
         <div className="input-divs">
           <div>
-            <p>Nombre:</p>{" "}
+            <p>{t('p-contacto-nombre')}</p>{" "}
             <input
               className="gm-sec"
               name="name"
@@ -53,7 +55,7 @@ const Contact = () => {
             ></input>
           </div>
           <div>
-            <p>Email:</p>{" "}
+            <p>{t('p-contacto-email')}</p>{" "}
             <input
               className="gm-sec"
               name="email"
@@ -68,14 +70,14 @@ const Contact = () => {
             ></input>
           </div>
           <div>
-            <p>Mensaje:</p>{" "}
+            <p>{t('p-contacto-mensaje')}:</p>{" "}
             <textarea
               className="gm-sec"
               name="message"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
               required
-              placeholder="Mensaje de ejemplo"
+              placeholder="Hey there!"
             ></textarea>
           </div>
         </div>
@@ -85,7 +87,7 @@ const Contact = () => {
           className={`btn ${!disabled ? "gm" : "gm-disabled"} `}
           type="submit"
         >
-          Enviar Correo
+          {t('btn-contacto')}
         </button>
         {emailSent === true && (
           <div className={`gm popup`}>

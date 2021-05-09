@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { UilBars } from "@iconscout/react-unicons";
 import { UilMultiply } from "@iconscout/react-unicons";
 import { AnimateSharedLayout, motion } from "framer-motion";
+import { useTranslation } from 'next-i18next'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const { t } = useTranslation('common');
 
   function clickToggle(e) {
     e.preventDefault();
@@ -31,11 +33,11 @@ const Navbar = () => {
         </div>
 
         <div  className="navbar-items">
-          <a href="#Inicio">Inicio</a>
-          <a href="#Servicios">Servicios</a>
-          <a href="#Portafolio">Portafolio</a>
-          <a href="#Contacto">Contacto</a>
-          <a href='https://testdigitalizacion.isaldigital.com' rel="noopener" target='_blank'>Test Digitalización</a>
+          <a href="#Inicio">{t('nav-inicio')}</a>
+          <a href="#Servicios">{t('nav-servicios')}</a>
+          <a href="#Portafolio">{t('nav-portafolio')}</a>
+          <a href="#Contacto">{t('nav-contacto')}</a>
+          {/* <a href='https://testdigitalizacion.isaldigital.com' rel="noopener" target='_blank'>Test Digitalización</a> */}
 
           <motion.button
           layout

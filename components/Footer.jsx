@@ -1,14 +1,18 @@
 import React from "react";
+import { useTranslation } from 'next-i18next'
 
 const Footer = () => {
+
+  const { t } = useTranslation('common')
+
   return (
     <div className="footer">
       <p>
-        <b>Encuentranos en:</b> Av. Universidad Poniente #370 Locales 503 y 504, La Piedad, 76150
-        Santiago de Querétaro, Qro.{" "}
+        <b>{t('p-sucursales-b')}</b>
+      {t('p-sucursales')}
       </p>
       <div className="gm-sec footer-div">
-        <p>Hecho con dedicacion, pasion y ❤️ por ISAL Digital</p>
+        <p>{t('p-hecho-con')}</p>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { appearFromRight } from "../utils/animations";
 import { useForm } from "react-hook-form";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import useScrollDisplay from "../utils/useScrollDisplay";
+import { useTranslation } from 'next-i18next'
 
 const CustomACForm = (props) => {
   const { register, handleSubmit, errors } = useForm(); // initialize the hook
@@ -13,6 +14,7 @@ const CustomACForm = (props) => {
   const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
   const PRIVATE_KEY = process.env.PRIVATE_KEY.replace(/\\n/g, "\n");
   const [element, display] = useScrollDisplay();
+  const {t} = useTranslation('common');
 
   const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
   const appendSpreadsheet = async (row) => {
@@ -92,26 +94,23 @@ const CustomACForm = (props) => {
             <div className="form-content">
               <div className="form_element _x84952078 _full_width _clear">
                 <div className="pt-1 gradient-text form-title">
-                  Agenda tu asesoría digital GRATIS.
+                  {t("h2-alert")}
                 </div>
               </div>
               <div className="form_element _x41611525 _full_width _clear">
                 <div className="_html-code">
                   <p className="form-description">
-                    Al terminar la reunión tendrás el conocimiento y las
-                    herramientas necesarias para impulsar tu negocio. <br></br>{" "}
-                    ¡Lo mejor de todo es que son herramientas gratuitas y
-                    fáciles de usar!
+                  {t("p-alert")}
                   </p>
                 </div>
               </div>
               <div className="form_element form_element-flex _x55544605 _full_width ">
-                <label className="form-label">Nombre:</label>
+                <label className="form-label">{t("p-alert-name")}</label>
                 <div className="_field-wrapper">
                   <input
                     type="text"
                     name="fullname"
-                    placeholder="Escriba su nombre"
+                    placeholder={t("ph-alert-name")}
                     className="gm-sec"
                     ref={register}
                     required
@@ -119,17 +118,17 @@ const CustomACForm = (props) => {
                 </div>
               </div>
               <div className="form_element form_element-flex _x10961460 _full_width ">
-                <label className="form-label">E-mail:</label>
+                <label className="form-label">{t("p-alert-email")}:</label>
                 <div className="_field-wrapper">
                   <input
                     type="text"
                     name="email"
-                    placeholder="Escriba su correo electrónico"
+                    placeholder={t("ph-alert-email")}
                     ref={register({
-                      required: "Ingresa tu email",
+                      required: t("error-alert-email-req"),
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i,
-                        message: "Ingresa una dirección email valida",
+                        message: t("error-alert-email-wrong"),
                       },
                     })}
                     required
@@ -147,11 +146,11 @@ const CustomACForm = (props) => {
                   className=" btn btn-alt"
                   type="submit"
                 >
-                  Enviar
+                  {t("btn-alert")}
                 </button>
               </div>
-              <h3>¿Lo tuyo no es el correo?</h3>
-              <p>¡Contactanos mediante Whatsapp!</p>
+              <h3>{t("h2-alert-wa")}</h3>
+              <p>{t("p-alert-wa")}</p>
               <div className="_button-wrapper wa-btn-wrapper pt-1 pb-2 _full_width">
                 <a
                   aria-label="Contact via Button"
@@ -160,28 +159,26 @@ const CustomACForm = (props) => {
                   target="_blank"
                   rel="noopener"
                 >
-                  Contactar por WhatsApp
+                  {t("btn-alert-wa")}
                 </a>
               </div>
             </div>
           ) : (
             <div className="form-resp">
-              <h2>¡Felicidades!</h2>
+              <h2>{t("success-alert-h2")}</h2>
               <p>
-                Estas a punto de impulsar tu negocio, solo te queda{" "}
+              {t("success-alert-p")}{" "}
                 <b>
-                  agendar una reunión en alguno de nuestros horarios
-                  disponibles.
+                {t("success-alert-p-b")}
                 </b>{" "}
-                <br></br> Da clic en el botón de abajo para seleccionar uno de
-                nuestros horarios disponibles.
+                <br></br> {t("success-alert-p-br")}
               </p>
 
               <button
                 className="btn btn-alt"
                 onClick={(event) => closeFormHref(event)}
               >
-                Agendar un horario
+                {t("success-alert-btn")}
               </button>
             </div>
           )}

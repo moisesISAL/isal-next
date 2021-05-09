@@ -2,19 +2,20 @@ import React, { useEffect } from "react";
 import useScrollLoadExternal from "../utils/useScrollLoadExternal";
 import { motion } from "framer-motion";
 import { servicesContainer } from "../utils/animations";
+import { useTranslation } from 'next-i18next'
 
 const Calendly = () => {
 
   const element = useScrollLoadExternal();
-
+  const { t } = useTranslation('common')
   return (
     <div ref={element}>
       <div id="asesoria-gratuita">
         <h2 className="gradient-text h2-calendly">
-          Agenda tu asesoría <br></br> digital gratuita
+        {t('h2-agenda')} <br></br> {t('h2-agenda-br')}
         </h2>
         <div id="schedule_form" className='div-de-calendly'>
-          <p className='wait-calendly'>Estamos cargando nuestra agenda, por favor espere...</p>
+          <p className='wait-calendly'>{t('p-agenda-cargando')}</p>
           <div
             className="calendly-inline-widget diary-widget"
             data-url="https://calendly.com/isaldigital/asesoria-digital-gratuita"

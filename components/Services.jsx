@@ -7,10 +7,12 @@ import {
   appearFromRight,
 } from "../utils/animations";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import { useTranslation } from 'next-i18next'
 
 const Services = () => {
   const [element, control] = useScroll();
+  const { t } = useTranslation('common');
+
   return (
     <motion.div
       ref={element}
@@ -24,7 +26,7 @@ const Services = () => {
         
         className="gradient-text"
       >
-        Nuestros servicios
+        {t('h2-nuestros-servicios')}
       </motion.h2>
       <motion.div
       
@@ -42,18 +44,16 @@ const Services = () => {
             ></LazyLoadImage>
           </div>
 
-          <h3 className="">Diseño y desarrollo web</h3>
+          <h3 className="">{t('h3-servicios-web')}</h3>
           <p>
-            Esta es nuestra especialidad. En ISAL diseñamos y desarrollamos
-            distintos productos web. Podemos crear Landing pages, Páginas Web,
-            Aplicaciones Web, PWA y Sistemas Web
+          {t('p-servicios-web')}
           </p>
           <div className="pt-1 service-btns">
             <a href="#asesoria-gratuita" className="btn gm-sec">
-              Asesoría gratuita
+            {t('btn-asesoria')}
             </a>
             <a href="#Contacto" className="btn gm-sec">
-              Contáctenos
+            {t('btn-contactenos')}
             </a>
           </div>
         </div>
@@ -67,20 +67,19 @@ const Services = () => {
             ></LazyLoadImage>
           </div>
 
-          <h3 className="">Diseño y desarrollo Móvil</h3>
+          <h3 className="">{t('h3-servicios-movil')}</h3>
           <p>
-            Las aplicaciones móviles pueden ayudarte a optimizar tus procesos o
-            pueden ser una idea de negocio por si misma. En ISAL podemos crear
-            la app que siempre has soñado.
+          {t('p-servicios-movil')}
           </p>
           <div className="pt-1 service-btns">
             <a href="#asesoria-gratuita" className="btn gm-sec">
-              Asesoría gratuita
+            {t('btn-asesoria')}
             </a>
             <a href="#Contacto" className="btn gm-sec">
-              Contáctenos
+            {t('btn-contactenos')}
             </a>
           </div>
+          
         </div>
         <div className="service-container gm-sec">
           <div className="service-img pt-2">
@@ -92,18 +91,16 @@ const Services = () => {
             ></LazyLoadImage>
           </div>
 
-          <h3 className="">Transformación Digital</h3>
+          <h3 className="">{t('h3-servicios-transf')}</h3>
           <p>
-            El objetivo de la transformación digital es ayudarte a ahorrar
-            costos, generar más clientes y hacer más fáciles tus procesos. En
-            ISAL queremos ayudarte a transformar tu negocio de forma eficiente.
+          {t('p-servicios-transf')}
           </p>
           <div className="pt-1 service-btns">
             <a href="#asesoria-gratuita" className="btn gm-sec">
-              Asesoría gratuita
+            {t('btn-asesoria')}
             </a>
             <a href="#Contacto" className="btn gm-sec">
-              Contáctenos
+            {t('btn-contactenos')}
             </a>
           </div>
         </div>
@@ -117,18 +114,16 @@ const Services = () => {
             ></LazyLoadImage>
           </div>
 
-          <h3 className="">Automatización de procesos</h3>
+          <h3 className="">{t('h3-servicios-auto')}</h3>
           <p>
-            La mayoría de los procesos aburridos de tu negocio se pueden
-            automatizar para que inviertas tu tiempo en los procesos que
-            realmente necesitan de tu supervisión.
+          {t('p-servicios-auto')}
           </p>
           <div className="pt-1 service-btns">
             <a href="#asesoria-gratuita" className="btn gm-sec">
-              Asesoría gratuita
+            {t('btn-asesoria')}
             </a>
             <a href="#Contacto" className="btn gm-sec">
-              Contáctenos
+            {t('btn-contactenos')}
             </a>
           </div>
         </div>

@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 import useScroll from "../utils/useScroll";
 import { methodSteps, methodContainer } from "../utils/animations";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useTranslation } from 'next-i18next';
 
 const Method = () => {
   const [element, control] = useScroll();
+  const { t } = useTranslation('common');
+  
   return (
     <motion.div
       ref={element}
@@ -16,14 +19,10 @@ const Method = () => {
       <div className="home-3-div">
         <div className="">
           <h2 className=" text-1 gradient-text">
-            Nuestra metodología: El pensamiento 10X.
+          {t('h2-metodologia')}
           </h2>
           <p>
-            Todo lo que hacemos en ISAL está basado en el pensamiento 10X. Se
-            trata de una metodología inventada por Google para encontrar
-            soluciones a todo tipo de problemas. El enfoque es abordar un
-            problema para en lugar de mejorarlo 10%, revolucionarlo 10 veces, es
-            decir una mejora del 1000%
+          {t('p-metodologia')}
           </p>
           <div>
             <motion.div
@@ -36,7 +35,7 @@ const Method = () => {
                 alt="ISAL Digital 2021 Logo"
                 src="https://res.cloudinary.com/dcemx7jg0/image/upload/v1614649099/isaldigital/icons/play_allvb8.svg"
               ></img>
-              <p>1. Comienza desde el principio, replantea</p>
+              <p>{t('p-metodologia-1')}</p>
             </motion.div>
             <motion.div
               variants={methodSteps}
@@ -48,7 +47,7 @@ const Method = () => {
                 alt="ISAL Digital 2021 Logo"
                 src="https://res.cloudinary.com/dcemx7jg0/image/upload/v1614650625/isaldigital/icons/search_dyrsu0.svg"
               ></img>
-              <p>2. Identifica el gran problema</p>
+              <p>{t('p-metodologia-2')}</p>
             </motion.div>
             <motion.div
               variants={methodSteps}
@@ -60,7 +59,7 @@ const Method = () => {
                 alt="ISAL Digital 2021 Logo"
                 src="https://res.cloudinary.com/dcemx7jg0/image/upload/v1614650625/isaldigital/icons/customer-service_nz5zme.svg"
               ></img>
-              <p>3. Visualiza el suceso, imagina cómo funcionará tu solución</p>
+              <p>{t('p-metodologia-3')}</p>
             </motion.div>
             <motion.div
               variants={methodSteps}
@@ -72,7 +71,7 @@ const Method = () => {
                 alt="ISAL Digital 2021 Logo"
                 src="https://res.cloudinary.com/dcemx7jg0/image/upload/v1614650625/isaldigital/icons/people-network_rhbjvg.svg"
               ></img>
-              <p>4. Colabora con personas. Obtén nuevos puntos de vista</p>
+              <p>{t('p-metodologia-4')}</p>
             </motion.div>
             <motion.div
               variants={methodSteps}
@@ -85,8 +84,7 @@ const Method = () => {
                 src="https://res.cloudinary.com/dcemx7jg0/image/upload/v1614650625/isaldigital/icons/vr-glasses_v4rsh8.svg"
               ></img>
               <p>
-                5. Descubre tecnologías, los grandes retos con frecuencia
-                requieren de una tecnología nueva, encuéntrala.
+              {t('p-metodologia-5')}
               </p>
             </motion.div>
             <motion.div
@@ -100,18 +98,17 @@ const Method = () => {
                 src="https://res.cloudinary.com/dcemx7jg0/image/upload/v1614650625/isaldigital/icons/sword_dou2sl.svg"
               ></img>
               <p>
-                6. Toma riesgos, no temas equivocarte, el ensayo y error
-                terminarán por dar dividendos.
+              {t('p-metodologia-6')}
               </p>
             </motion.div>
           </div>
 
           <div className="pt-1 group-btns">
             <a href="#asesoria-gratuita" className="btn gm-sec">
-              Asesoría gratuita
+            {t('btn-asesoria')}
             </a>
             <a href="#Contacto" className="btn gm-sec">
-              Contáctenos
+            {t('btn-contactenos')}
             </a>
           </div>
         </div>
