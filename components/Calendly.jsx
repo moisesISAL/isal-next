@@ -18,7 +18,7 @@ const Calendly = () => {
           <p className='wait-calendly'>{t('p-agenda-cargando')}</p>
           <div
             className="calendly-inline-widget diary-widget"
-            data-url="https://calendly.com/isaldigital/asesoria-digital-gratuita"
+            data-url="https://calendly.com/isaldigital/digital-advisory"
           />
         </div>
       </div>
