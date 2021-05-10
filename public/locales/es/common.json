@@ -85,18 +85,12 @@
           "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-travel_htcvgx.jpg",
           "link": "https://isaldigital.com/mjpg/travel-website"
         },
-        {
-          "title": "Valdezautosales.co",
-          "description": "Página web para agencia de autos. Mediante la estrategia digital que llevamos a cabo logramos triplicar sus ventas y conseguir 3k seguidores en Instagram.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-travel_htcvgx.jpg",
-          "link": "https://valdezautosales.co"
-        },
+    
         {
           "title": "medinasbridal.com",
-          "description": "[Agregar descripción]",
+          "description": "Página web para un servicio nupcial. Gracias a esta página, medinasbridal obtuvo un look mucho más profesional y además pudieron vender en línea.",
           "technologies": "HTML, CSS, Bootstrap",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729742/isaldigital/portfolio/web-Colmena_bftf0n.jpg",
+          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:low/v1620149591/isaldigital/portfolio/medinas_bridal.png",
           "link": "https://www.colmena.fund"
         },
 
