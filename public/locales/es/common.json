@@ -78,21 +78,16 @@
           "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729742/isaldigital/portfolio/web-Colmena_bftf0n.jpg",
           "link": "https://www.colmena.fund"
         },
-        {
-          "title": "Travel Website",
-          "description": "Página web de prueba. El objetivo de este desarrollo fue implementar nuevas animaciones y transiciones para crear experiencias únicas.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-travel_htcvgx.jpg",
-          "link": "https://isaldigital.com/mjpg/travel-website"
-        },
+        
     
         {
-          "title": "medinasbridal.com",
-          "description": "Página web para un servicio nupcial. Gracias a esta página, medinasbridal obtuvo un look mucho más profesional y además pudieron vender en línea.",
-          "technologies": "HTML, CSS, Bootstrap",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:low/v1620149591/isaldigital/portfolio/medinas_bridal.png",
-          "link": "https://www.colmena.fund"
+          "title": "Auremp",
+         " technologies": "React JS, NextJS, Magic, Strapi, Nodejs",
+         "description": "Ecommerce a la medida.",
+          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/c_scale,w_432/v1633028340/isaldigital/portfolio/auremp_m5mz2s.png",
+          "link": "https://auremp.com"
         },
+       
 
         {
           "title": "I-Design (Offline)",
@@ -133,20 +128,6 @@
           "technologies": "Angular, SCSS",
           "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/v1614729740/isaldigital/portfolio/angular-budget_cvrjlp.jpg",
           "link": "https://budget-mjpg.web.app/"
-        },
-        {
-          "title": "Cool TODO List",
-          "description": "Aplicación de agenda. El objetivo de esta aplicación fue probar las capacidades de javascript por si solo.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-todo_wfwfpj.jpg",
-          "link": "https://isaldigital.com/mjpg/todo-project"
-        },
-        {
-          "title": "Coloors Pallete",
-          "description": "Aplicación para generar paletas de colores. El objetivo de esta aplicación fue probar las capacidades de javascript por si solo.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-coloors_bnkrxu.jpg",
-          "link": "https://isaldigital.com/mjpg/coloors"
         }
       ]
     },

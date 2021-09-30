@@ -79,19 +79,13 @@
           "link": "https://www.colmena.fund"
         },
         {
-          "title": "Travel Website",
-          "description": "Test web Page. The objective of this development was to test some new cool animations and transitions to create unique experiences.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-travel_htcvgx.jpg",
-          "link": "https://isaldigital.com/mjpg/travel-website"
+          "title": "Auremp",
+         " technologies": "React JS, NextJS, Magic, Strapi, Nodejs",
+         "description": "Custom Ecommerce.",
+          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/c_scale,w_432/v1633028340/isaldigital/portfolio/auremp_m5mz2s.png",
+          "link": "https://auremp.com"
         },
-        {
-          "title": "medinasbridal.com",
-          "description": "Web page for bridal services. Thanks to this page they get a professional look and a lot of new customers",
-          "technologies": "HTML, CSS, Bootstrap",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:low/v1620149591/isaldigital/portfolio/medinas_bridal.png",
-          "link": "https://www.colmena.fund"
-        },
+       
 
         {
           "title": "I-Design (Offline)",
@@ -132,21 +126,8 @@
           "technologies": "Angular, SCSS",
           "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/v1614729740/isaldigital/portfolio/angular-budget_cvrjlp.jpg",
           "link": "https://budget-mjpg.web.app/"
-        },
-        {
-          "title": "Cool TODO List",
-          "description": "Todo List app. This app was develoed just for fun and test purposes.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-todo_wfwfpj.jpg",
-          "link": "https://isaldigital.com/mjpg/todo-project"
-        },
-        {
-          "title": "Coloors Pallete",
-          "description": "Colors Pallete App. This app was develoed just for fun and test purposes.",
-          "technologies": "Javascript, HTML, CSS",
-          "img": "https://res.cloudinary.com/dcemx7jg0/image/upload/f_auto,q_auto:eco/v1614729740/isaldigital/portfolio/js-coloors_bnkrxu.jpg",
-          "link": "https://isaldigital.com/mjpg/coloors"
         }
+        
       ]
     },
     {
